@@ -1,5 +1,8 @@
+body {
+  background-color: black;
+}
+
 #moons {
-  width: 100%;
   color: white;
   background-color: black;
   padding: 16px;
@@ -10,6 +13,7 @@
   text-align: center;
 }
 #moons > div {
+  padding-top: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,13 +21,14 @@
 }
 #moons > div > div {
   border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
   margin: 1%;
-  padding: 1%;
+  padding: 2%;
 }
 #moons > div > div > span {
   position: absolute;
   font-size: 32px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }
