@@ -9,7 +9,7 @@ function load_moon_phases(obj, callback) {
   var xmlhttp = new XMLHttpRequest();
   var url = "https://www.icalendar37.net/lunar/api/?" + gets.join("&");
   xmlhttp.onreadystatechange = function () {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+    if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
       callback(JSON.parse(xmlhttp.responseText));
     }
   };
